@@ -5,33 +5,36 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-  <header class-"main-header">
-    <nav class="main-navigation">
-      <ul class="left-menu">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-      </ul>
-      <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
-      <ul class="right-menu">
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <img class="intro" src="img/intro.png" width="1200" height="511" alt="Седона">
-    <section class="description">
-      <b>СЕДОНА — небольшой городок в Аризоне, заслужтвающий большего!</b>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    </section>
-    <section class="reasons">
-      <div class="reason-item left">
-        <b>Настоящий городок</b>
-        <p class="number">-№1-</p>
-        <p class="description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-      </div>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="left-menu">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+        </ul>
+        <a href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
+        <ul class="right-menu">
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <img class="intro" src="img/intro.png" width="1200" height="511" alt="Седона" />
+
+      <section class="description">
+        <b>СЕДОНА — небольшой городок в Аризоне, заслужтвающий большего!</b>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+
+      <section class="reasons">
+        <div class="reason-item left">
+          <b>Настоящий городок</b>
+          <p class="number">-№1-</p>
+          <p class="description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
         <img class="photo-city" src="img/city.png" width="800" height="325" alt="Город">
-    </section>
+      </section>
 
       <section class="ideas">
         <div class="idea-item">
@@ -61,77 +64,82 @@
       </section>
 
       <section class="adventages">
-        <div=class"adventage-item">
+        <div class="adventage-item">
           <b>Небольшая площадь</b>
           <p class="number">-№3-</p>
           <p class="description">Все достопримечательности находятся очень близко</p>
         </div>
-        <div=class"adventage-item">
+        <div class="adventage-item">
           <b>Красивая дорога</b>
           <p class="number">-№4-</p>
           <p class="description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
-        <div=class"adventage-item">
+        <div class="adventage-item">
           <b>Мало туристов</b>
           <p class="number">-№5-</p>
           <p class="description">Большинство едет в Гранд-Каньон и толпится там</p>
         </div>
       </section>
 
-        <section class="trip">
-          <div class="details">
-            <h3>Заинтересовались?</h3>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          </div>
-          <div class="search-hotel">
-            <button class="show-form" type="button">Поиск гостиниц в Седоне</button>
-            <div class="search-form">
-              <form>
-                <label for="arriving-date">Дата заезда:</label>
-                <input type="text" name="arriving-date" value="24 апреля 2016">
-                <label for="departure-date">Дата выезда:</label>
-                <input type="text" name="departure-date" value="4 июля 2016">
-                <div class="counter">
-                  <label for "number">Взрослые:</label>
-                  <div class="counter-item">
-                    <span>-<span>
-                    <input type="text" name="number"value="2">
-                    <span>+<span>
-                  </div>
-                </div>
-                <div class="counter">
-                  <label for "number">Дети:</label>
-                  <div class="counter-item">
-                    <span>-<span>
-                    <input type="text" name="number"value="0">
-                    <span>+<span>
-                  </div>
-                </div>
-                <button class="search-btn" type="button">Найти</button>
-              </form>
-            </div>
-          </div>
-        </section>
+      <section class="trip">
+        <div class="details">
+          <h3>Заинтересовались?</h3>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
 
-        <section class="map">
-          <img src="img/map.png" width="1200" height="474" alt="Карта">
-        </section>
-  </main>
+        <div class="search-hotel">
+          <button class="show-form" type="button">Поиск гостиниц в Седоне</button>
+          <div class="search-form">
+            <form>
+              <label for="arriving-date">Дата заезда:</label>
+              <input type="text" id="arriving-date" name="arriving-date" value="24 апреля 2016">
+              <label for="departure-date">Дата выезда:</label>
+              <input type="text" id="departure-date" name="departure-date" value="4 июля 2016">
+              <div class="counter">
+                <label for="number">Взрослые:</label>
+                <div class="counter-item">
+                  <span>-</span>
+                  <input type="text" id="number" name="number" value="2">
+                  <span>+</span>
+                </div>
+              </div>
+              <div class="counter">
+                <label for="number">Дети:</label>
+                <div class="counter-item">
+                  <span>-</span>
+                  <input type="text" name="number" value="0">
+                  <span>+</span>
+                </div>
+              </div>
+              <button class="search-btn" type="button">Найти</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <img src="img/map.png" width="1200" height="474" alt="Карта">
+      </section>
+    </main>
+
     <footer class="main-footer">
       <div class="container">
         <section class="footer-tag">
           <p>#viditsedona</p>
         </section>
+
         <section class="footer-social">
           <a class="social-btn social-btn-twitter" href="#">Твиттер</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-youtube" href="#">Ютьюб</a>
         </section>
+
         <section class="footer-copyright">
           <p>Website by:</p>
-          <a class="btn" href="https://htmlacademy.ru"><img src="img/dev.png" width="" heigh"" alt="Лого"></a>
+          <a class="btn" href="https://htmlacademy.ru"><img src="img/dev.png" alt="Лого"></a>
         </section>
       </div>
     </footer>
+
   </body>
 </html>
