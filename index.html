@@ -19,12 +19,9 @@
       </header>
 
       <main>
-        <img class="intro-image" src="img/intro.png" width="1200" height="511" alt="Background image" />
-        <img class="welcome-image" src="img/welcome-image.png" alt="Welcome" />
-        <img class="gorgeous-image" src="img/gorgeous-image.png" alt="to the gorgrous" />
-        <img class="sedona-image" src="img/sedona-image.png" alt="Sedona" />
-        <img class="grand-canyon-image" src="img/grand-canyon-image.png" alt="Grand canyon sucks" />
-
+        <div class="intro">
+          <img class="intro-text" src="img/intro-text.png" width="150" height="100" alt="Текст" />
+        </div>
 
         <section class="description">
           <b>СЕДОНА — небольшой городок в Аризоне, заслужтвающий большего!</b>
@@ -92,16 +89,16 @@
             <a href="#" class="show-form">Поиск гостиниц в Седоне</a>
             <div class="search-form">
               <form>
-                <span>
+                <div class="arriving-date">
                   <label for="arriving-date">Дата заезда:</label>
                   <input type="text" id="arriving-date" name="arriving-date" value="24 апреля 2016">
                   <button class="calendar" type="button" name="calendar-button"></button>
-                </span>
-                <span>
+                </div>
+                <div class="departure-date">
                   <label for="departure-date">Дата выезда:</label>
                   <input type="text" id="departure-date" name="departure-date" value="4 июля 2016">
                   <button class="calendar" type="button" name="calendar-button"></button>
-                </span>
+                </div>
                 <div class="counter">
                   <label for="number">Взрослые:</label>
                   <div class="counter-item">
