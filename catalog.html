@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -9,7 +11,7 @@
       <header class="main-header">
         <a class="logo-image" href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
         <nav class="main-navigation">
-          <ul class="left-menu">
+          <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
@@ -20,17 +22,35 @@
       <main>
         <section class="filters">
           <form method="post">
-            <div class="filter">
+            <div class="filter-property">
               <h4>Инфраструктура:</h4>
-              <label><input type="checkbox" name="amenity-1" value="pool" checked>Бассейн</label>
-              <label><input type="checkbox" name="amenity-2" value="parking" >Парковка</label>
-              <label><input type="checkbox" name="amenity-3" value="wi-fi">Wi-fi</label>
+              <div>
+                <input type="checkbox" id="amenity-1" name="amenity-1" value="pool" checked>
+                <label for="amenity-1">Бассейн</label>
+              </div>
+              <div>
+                <input type="checkbox" id="amenity-2" name="amenity-2" value="parking">
+                <label for="amenity-2">Парковка</label>
+              </div>
+              <div>
+                <input type="checkbox" id="amenity-3" name="amenity-3" value="wi-fi">
+                <label for="amenity-3">Wi-fi</label>
+              </div>
             </div>
-            <div class="filter">
+            <div class="filter-amenity">
               <h4>Тип жилья:</h4>
-              <label><input type="checkbox" name="property-1" value="hotel" checked>Гостиница</label>
-              <label><input type="checkbox" name="property-2" value="motel" >Мотель</label>
-              <label><input type="checkbox" name="property-3" value="apartment">Апартаменты</label>
+              <div>
+                <input type="checkbox" id="property-1" name="property-1" value="hotel" checked>
+                <label for="property-1">Гостиница</label>
+              </div>
+              <div>
+                <input type="checkbox" id="property-2" name="property-2" value="motel">
+                <label for="property-2">Мотель</label>
+              </div>
+              <div>
+                <input type="checkbox" id="property-3" name="property-3" value="apartment">
+                <label for="property-3">Апартаменты</label>
+              </div>
             </div>
             <div class="filter-price">
               <h4>Стоимость в сутки(Р):</h4>
@@ -66,7 +86,7 @@
         </section>
         <section class="hotel-item">
           <div class="item-image">
-            <img src="img/property.png" width="135" height="90" alt="Фото" />
+            <img src="img/property.jpg" width="135" height="90" alt="Фото" />
           </div>
           <div class="item-description">
               <h3 class="item-title"><a href="#">Amara resort&Spa</a></h3>
@@ -95,7 +115,7 @@
 
         <section class="hotel-item">
           <div class="item-image">
-            <img src="img/property.png" width="135" height="90" alt="Фото" />
+            <img src="img/property-2.jpg" width="135" height="90" alt="Фото" />
           </div>
           <div class="item-description">
             <div class="item-title">
@@ -123,7 +143,7 @@
 
         <section class="hotel-item">
           <div class="item-image">
-            <img src="img/property.png" width="135" height="90" alt="Фото" />
+            <img src="img/property-3.jpg" width="135" height="90" alt="Фото" />
           </div>
           <div class="item-description">
             <div class="item-title">
@@ -156,9 +176,9 @@
         </section>
 
         <section class="footer-social">
-          <a class="social-btn social-btn-twitter" href="#">Твиттер</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-youtube" href="#">Ютьюб</a>
+          <a class="social-btn social-btn-twitter" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-youtube" href="#"></a>
         </section>
 
         <section class="footer-copyright">
