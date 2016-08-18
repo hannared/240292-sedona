@@ -26,7 +26,8 @@ button {
 .main-navigation {
     list-style-type: none;
     margin: 0;
-    padding: 20px 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     width: 1200px;
     background-color: #fff;
 }
@@ -93,8 +94,8 @@ button {
   text-align: center;
 }
 
-.reasons::after, .ideas::after, .advantages::after, .main-footer::after, .main-navigation ul::after, .filters form::after,
-.sorting::after, .item-sorting-list::after, .hotel-item::after, .item-description::after, .item-rating::after, .stars::after {
+
+.clearfix::after {
   clear: both;
   content: "";
   display: block;
@@ -126,27 +127,44 @@ button {
   float: right;
 }
 
-.idea-item1, .idea-item2, .idea-item3 {
+.idea-item {
   width: 33.3%;
   min-height: 262px;
   float: left;
   background-repeat: no-repeat;
+  padding-bottom: 85px;
 }
 
 .idea-item1 {
   background-image: url(../img/house.png);
+  background-position-x: 162px;
+  background-position-y: 60px;
 }
 
 .idea-item2 {
   float: left;
   background-image: url(../img/burger.png);
-
+  background-position-x: 162px;
+  background-position-y: 60px;
 }
 
 .idea-item3 {
   float: left;
   background-image: url(../img/presents.png);
+  background-position-x: 162px;
+  background-position-y: 60px;
+}
 
+.idea-item h4 {
+  margin: 0;
+  padding-top: 165px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.idea-item p {
+  text-align: center;
+  margin: 0;
 }
 
 .photo-mountain {
@@ -179,6 +197,7 @@ button {
   width: 33.3%;
   float: left;
   padding-top: 50px;
+  padding-bottom: 65px;
 }
 
 .advantages b {
@@ -225,10 +244,6 @@ h2 {
   box-shadow: -7px 0px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
-/*form {
-  margin-left: auto;
-  margin-right: auto;
-}*/
 .arriving-date input, .departure-date input {
   background-image: url(../img/calendar.png);
   background-repeat: no-repeat;
@@ -271,17 +286,18 @@ h2 {
 
 .footer-tag {
   float: left;
-  width: 33.3%;
+  padding-right: 255px;
+  padding-left: 130px;
 }
 
 .footer-social {
   float: left;
-  width: 33.3%;
+  padding-right: 230px;
 }
 
 .footer-copyright {
   float: left;
-  width: 33.3%;
+
 }
 
 .social-btn {
@@ -289,14 +305,17 @@ h2 {
   margin: 1px;
   width:  46px;
   height: 48px;
+  background-repeat: no-repeat;
+  background-color: #81b3d2;
+  background-position: center;
+  font-size: 0px;
 }
 .social-btn-twitter {
   background-image: url(../img/twitter.png);
-
 }
 
 .social-btn-fb {
-  background-image: url(../img/facebook.png);
+  background-image: url(../img/facebook2.png);
 }
 
 .social-btn-youtube {
@@ -394,11 +413,14 @@ h2 {
 
 .hotel-item {
   margin-bottom: 70px;
+  float: left;
+  width: 100%;
 }
 
 .item-image {
   float: left;
   margin-left: 75px;
+  float: left;
 
 }
 
@@ -410,11 +432,13 @@ h2 {
 .item-description {
   width: 455px;
   float: left;
+  padding-left: 30px;
 }
 .item-rating {
-  width: 200px;
+
   float: right;
   padding-right: 75px;
+  float: right;
 }
 
 .star {

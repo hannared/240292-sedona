@@ -11,7 +11,7 @@
       <header class="main-header">
         <a class="logo-image" href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a>
         <nav class="main-navigation">
-          <ul>
+          <ul class="clearfix">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
@@ -21,7 +21,7 @@
       </header>
       <main>
         <section class="filters">
-          <form method="post">
+          <form class="clearfix" method="post">
             <div class="filter-property">
               <h4>Инфраструктура:</h4>
               <div>
@@ -69,11 +69,11 @@
             </div>
           </form>
         </section>
-        <section class="sorting">
+        <section class="sorting clearfix">
           <h3>Найдено: 3</h3>
           <div class="item-sorting">
             <span>Сортировка:</span>
-            <ul class="item-sorting-list">
+            <ul class="item-sorting-list clearfix">
               <li><a class="active" href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По рейтингу</a></li>
@@ -84,93 +84,95 @@
             <a class="arrow-down" href="#"></a>
           </div>
         </section>
-        <section class="hotel-item">
-          <div class="item-image">
-            <img src="img/property.jpg" width="135" height="90" alt="Фото" />
-          </div>
-          <div class="item-description">
-              <h3 class="item-title"><a href="#">Amara resort&Spa</a></h3>
-            <div class="item-price">
-              <span class="name">Гостиница</span>
-              <span class="price">От 3500 р.</span>
+        <section class="hotels clearfix">
+          <section class="hotel-item">
+            <div class="item-image">
+              <img src="img/property.jpg" width="135" height="90" alt="Фото" />
             </div>
-            <div class="booking-btn">
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+            <div class="item-description">
+                <h3 class="item-title"><a href="#">Amara resort&Spa</a></h3>
+              <div class="item-price">
+                <span class="name">Гостиница</span>
+                <span class="price">От 3500 р.</span>
+              </div>
+              <div class="booking-btn">
+                <a href="#">Подробнее</a>
+                <a href="#">Забронировать</a>
+              </div>
             </div>
-          </div>
-          <div class="item-rating">
-            <div class="stars">
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
+            <div class="item-rating clearfix">
+              <div class="stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <div class="rating">
+                <span>Рейтинг: 8,5</span>
+              </div>
             </div>
-            <div class="rating">
-              <span>Рейтинг: 8,5</span>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="hotel-item">
-          <div class="item-image">
-            <img src="img/property-2.jpg" width="135" height="90" alt="Фото" />
-          </div>
-          <div class="item-description">
-            <div class="item-title">
-              <h3 class="item-title"><a href="#">Desert Qual Inn</a></h3>
+          <section class="hotel-item ">
+            <div class="item-image">
+              <img src="img/property-2.jpg" width="135" height="90" alt="Фото" />
             </div>
-            <div class="item-price">
-              <span class="name">Мотель</span>
-              <span class="price">От 2000 р.</span>
+            <div class="item-description clearfix">
+              <div class="item-title">
+                <h3 class="item-title"><a href="#">Desert Qual Inn</a></h3>
+              </div>
+              <div class="item-price">
+                <span class="name">Мотель</span>
+                <span class="price">От 2000 р.</span>
+              </div>
+              <div class="booking-btn">
+                <a href="#">Подробнее</a>
+                <a href="#">Забронировать</a>
+              </div>
             </div>
-            <div class="booking-btn">
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+            <div class="item-rating clearfix">
+              <div class="stars clearfix">
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <div class="rating">
+                <span>Рейтинг: 8,9</span>
+              </div>
             </div>
-          </div>
-          <div class="item-rating">
-            <div class="stars">
-              <span class="star"></span>
-              <span class="star"></span>
-            </div>
-            <div class="rating">
-              <span>Рейтинг: 8,9</span>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="hotel-item">
-          <div class="item-image">
-            <img src="img/property-3.jpg" width="135" height="90" alt="Фото" />
-          </div>
-          <div class="item-description">
-            <div class="item-title">
-              <h3 class="item-title"><a href="#">Villas at Poko Diablo</a></h3>
+          <section class="hotel-item">
+            <div class="item-image">
+              <img src="img/property-3.jpg" width="135" height="90" alt="Фото" />
             </div>
-            <div class="item-price">
-              <span class="name">Апартаменты</span>
-              <span class="price">От 4000 р.</span>
+            <div class="item-description">
+              <div class="item-title">
+                <h3 class="item-title"><a href="#">Villas at Poko Diablo</a></h3>
+              </div>
+              <div class="item-price">
+                <span class="name">Апартаменты</span>
+                <span class="price">От 4000 р.</span>
+              </div>
+              <div class="booking-btn">
+                <a href="#">Подробнее</a>
+                <a href="#">Забронировать</a>
+              </div>
             </div>
-            <div class="booking-btn">
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+            <div class="item-rating clearfix">
+              <div class="stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <div class="rating">
+                <span>Рейтинг: 9,2</span>
+              </div>
             </div>
-          </div>
-          <div class="item-rating">
-            <div class="stars">
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-            </div>
-            <div class="rating">
-              <span>Рейтинг: 9,2</span>
-            </div>
-          </div>
+          </section>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer clearfix">
         <section class="footer-tag">
           <p>#viditsedona</p>
         </section>
@@ -182,8 +184,8 @@
         </section>
 
         <section class="footer-copyright">
-          <p>Website by:</p>
-          <a class="btn" href="https://htmlacademy.ru"><img src="img/dev.png" alt="Лого"></a>
+          <span>Website by</span>
+          <a class="dev-btn-logo" href="https://htmlacademy.ru"><img src="img/dev.png" alt="Лого"></a>
         </section>
       </footer>
     </div>
